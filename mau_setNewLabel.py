@@ -18,6 +18,14 @@ def setNewLabel():
     #IF ONLY ONE NODE IS SELECTED, PROCEED TO ADD NEW LABEL
     else:
         try:
+            
+            #CREATE CUSTOM PANEL TO GET USER INPUT
+             #p = nuke.Panel('Set New Label')
+             #p.addSingleLineInput('New Label', '')
+             #p.setWidth(350)
+             #p.show()
+             #txt = p.value('New Label')
+                
             actualLabel = node.knob('label').value()
             txt = nuke.getInput("Set New Label",actualLabel)
 
